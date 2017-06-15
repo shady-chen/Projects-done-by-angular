@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣电影</title>
+	<link rel="stylesheet" href="./src/bs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body ng-controller="ctrl" ng-cloak>
+	<div class="container-fluid" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 hidden-xs">
+					<h2 class="text-info">豆瓣电影</h2>
+				</div>
+				<div class="col-md-4 hidden-sm hidden-xs"></div>
+				<div class="col-md-5 col-sm-9 col-xs-12">
+				  	<div class="input-group h2">
+				      <input type="text" class="form-control " ng-model='searchdata'>
+				      <div class="input-group-addon btn" id="search" ng-click="search()" ui-sref="search" >搜索</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div class="container">
+	<!-- *******************btn-group********************************* -->
+		<div class="btn-group nav-btn">
+			<div class="btn btn-primary mybtn" ui-sref="home">即将上映</div>
+			<div class="btn btn-danger mybtn" ui-sref="hot" ng-click="hotMovie()">热门电影</div>
+			<div class="btn btn-warning mybtn" ui-sref="heigh" ng-click="toptwo()">电影排名</div>
+		</div>
+
+		<div class="list thumbnail" id="flim-list">
+			
+			<div ui-view='main'>
+				
+			</div>	
+
+		</div>
+	</div>
+	
+	
+</body>
+<script src="./src/bs/js/jquery-3.2.0.min.js"></script>
+<script src="./src/bs/js/bootstrap.min.js"></script>
+<script src='./src/angular.min.js'></script>
+<script src='./src/angular-ui-router.min.js'></script>
+<script src="./js/index.js"></script>
+</html>

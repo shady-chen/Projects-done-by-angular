@@ -1,0 +1,52 @@
+#header{
+	height: 70px;
+	border-bottom: 3px solid #ddd; 
+	box-shadow: 0px 3px 3px #ddd;
+}
+.nav-btn{
+	width: 100%;
+	display: flex;
+	margin-top: 15px;
+}
+.mybtn{
+	text-align: center;
+	display: flex;
+	flex: 1;
+	height: 50px;
+	 flex-direction:column;
+	 line-height: 50px;
+	 padding:0px;
+	 font-size: 20px;
+}
+#search{
+	background: gold;
+	font-size: 20px;
+	color: #fff;
+}
+#flim-list{
+	
+	width: 100%;
+	margin-top: 15px;
+}
+.carts{
+	 text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+}
+.page-divice
+{
+	overflow: hidden;
+	width: 300px;
+}
+.img-a
+{
+	display: block;
+	width: 100%;
+	height: 380px;
+}
+.img-a>img{
+	border-radius: 8px;
+	height: 380px !important;
+}
+.title-flim
+{
+	text-overflow:ellipsis !important; white-space:nowrap !important; overflow:hidden !important;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>饿了么 移动端页面</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./src/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/swiper.min.css">
+    <link rel="stylesheet" href="./src/animate.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/find.css">
+    <link rel="stylesheet" href="./css/orderForm.css">
+    <link rel="stylesheet" href="./css/mine.css">
+    <script src='./js/resp.js'></script>
+    <script src='./src/jquery-3.2.0.min.js'></script>
+    <script src='./src/swiper.min.js'></script>
+    <script src='./src/angular.min.js'></script>
+    <script src='./src/angular-ui-router.min.js'></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=yH67GLzjUS0o2m4BF1Ciid3vuKYuR1hG"></script>
+
+
+</head>
+
+<body style="font-size: 24px;" ng-controller="ctrl" ng-cloak>
+<!-- init page by swiper.js  start-->
+<div class="swiper-container swiper-container1" style="display: none">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/init4.jpeg" alt="" width="100%" height="100%">
+                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.1s" style="font-size: 50px;position: absolute;right: 45%;top: 40%;color: white;opacity: 0.5;">>></p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/init6.png" alt="" width="100%" height="100%">
+                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.1s" style="font-size: 50px;position: absolute;right: 45%;top: 40%;color: white;opacity: 0.5;">>></p>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/init3.jpg" alt="" width="100%" height="100%">
+                <button class="btn">点击进入</button>
+            </div>
+        </div>
+</div>
+<!-- init page by swiper.js  end  -->
+
+<!-- main start -->
+<div id="main" style="display: block" >
+    <div ui-view='main' id="main-main">
+        
+    </div>
+
+    
+</div>
+<!-- main end -->
+<div id="footer">
+    <a href="" ui-sref="home">外卖</a>
+    <a  ui-sref="find">发现</a>
+    <a  ui-sref="orderForm">订单</a>
+    <a  ui-sref="mine">我的</a>
+
+
+    <!--<a href="" ui-sref="">订单</a>-->
+    <!--<a href="" ui-sref="">我的</a>-->
+</div>
+<!--maps-->
+<div id="allmap" style="display: none;"></div>
+</body>
+
+
+<script src='./src/swiper.animate1.0.2.min.js'></script>
+<script src='./js/height.js'></script>
+<script src='./js/index.js'></script>
+<script src='./js/map.js'></script>
+
+
+</html>

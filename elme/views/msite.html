@@ -1,0 +1,126 @@
+<!--header start-->
+<div direc></div>
+<div id="header">
+    <div class="top">
+        <div class="address">正在定位...</div>
+        <img class="top-img" src="//fuss10.elemecdn.com/d/73/f4fa565ba5f45c6b7f17fc19cb099png.png?imageMogr/format/webp/thumbnail/!69x69r/gravity/Center/crop/69x69/" alt="">
+        <div class="weather">
+            <p>22°</p>
+            <p>小雨</p>
+        </div>
+    </div> <!--顶部-->
+    <input type="text" id="search" value="搜索商品、商家">
+    <div class="tips">
+        <div class="tips-content">
+            <a href="#">意面</a>
+            <a href="#">炸鸡</a>
+            <a href="#">柠檬</a>
+            <a href="#">水果剪20元</a>
+            <a href="#">我的菜</a>
+            <a href="#">意大利面</a>
+            <a href="#">小龙虾</a>
+            <a href="#">泡芙</a>
+            <a href="#">海鲜面</a>
+            <a href="#">地瓜</a>
+        </div>
+    </div>
+</div>
+<!--header end-->
+
+<!--nav start-->
+<nav id="nav" ng-cloak class="ng-cloak">
+    <div class="swiper-container" id="swiper-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="line-height: normal">
+               <ul>
+                   <li>
+                       <a href="#">
+                       <img src="//fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                       <span>美食</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/2/35/696aa5cf9820adada9b11a3d14bf5jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>甜品饮品</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/3/84/8e031bf7b3c036b4ec19edff16e46jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>商超便利</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/3/84/8e031bf7b3c036b4ec19edff16e46jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>准时达</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/d/38/7bddb07503aea4b711236348e2632jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>晚餐</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/8/83/171fd98b85dee3b3f4243b7459b48jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>鲜花蛋糕</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/3/c7/a9ef469a12e7a596b559145b87f09jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>麻辣烫</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#">
+                           <img src="//fuss10.elemecdn.com/7/b6/235761e50d391445f021922b71789jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                           <span>披萨意面</span>
+                       </a>
+                   </li>
+               </ul>
+
+            </div>
+            <div class="swiper-slide">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="//fuss10.elemecdn.com/6/d2/de0683a49a0655c728b70fdb344d5jpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
+                            <span>异国料理</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="direc"></div>
+    </div>
+</nav>
+<!--nav end-->
+
+<!--推荐商家开始-->
+
+<div id="seller">
+    <h3>推荐商家</h3>
+    <div class="big-box" ng-repeat="(k,v) in dataShop">
+        <div class="box-img">
+            <img ng-src="{{v.img}}" alt="">
+        </div>
+        <div class="box-details">
+            <p>{{v.name}}</p>
+            <div class="stars" ><span style="color:yellow">★★★★★</span>&nbsp;<span style="color: red">{{v.starnum}}</span>&nbsp;月售{{v.monthnum}}单</div>
+            <div class="mins">￥{{v.start}}起送/配送费￥{{v.change}}<span ng-show="v.per!=0">/ ￥{{v.per}}/人</span> <span style="float: right;">{{v.long}}km<span style="color:#2395ff" ng-show="v.mins!=0">/{{v.mins}}分钟</span></span></div>
+        </div>
+    </div>
+   
+</div>
+
+<!--推荐商家结束-->
+
+<!--底部路由管理开始-->
+
+<!--底部路由管理结束-->

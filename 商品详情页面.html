@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情页面</title>
+	
+	<link rel="shortcut icon " href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/xiangqing.css">
+	<script src="./js/jQuery.js"></script>
+	<script src="./js/xiangqing.js"></script>
+	<script src="./js/myAutoplay.js"></script>
+</head>
+<body>
+	<!-- 最上面 -->
+	<div class="header-wrap">
+		<div id="header">
+			<div class="pull-left">
+		   		<ul class="list-unstyled">
+					<li class=" pull-left">欢迎来酒仙网！</li>
+					<li class=" pull-left"><a href="">请登录</a></li>
+					<li class=" pull-left"><a href="">免费注册</a></li>
+				</ul>
+			</div>
+			<div class="pull-right">
+		   		<ul class="list-unstyled">
+					<li class=" pull-left header-hover" id="chen">
+						<a href="#">我的酒仙</a>
+						<div class="header-hover-hide">
+							<p><a href="">我的订单</a></p>
+							<p><a href="">物流跟踪</a></p>
+							<p><a href="">我的优惠券</a></p>
+						</div>
+					</li>
+					<li class=" pull-left"><a href="">CEO邮箱</a></li>
+					<li class=" pull-left"><a href="">购物车<span>0</span>件</a></li>
+					<li class=" pull-left"><a href="" >社区</a></li>
+					<li class=" pull-left"><a href="">招商入驻</a></li>
+					<li class=" pull-left sjgjx">
+						<a href="">手机逛酒仙</a>
+						<div class="header-hover-hide">
+							<img src="img/erweima.png" alt="">
+						</div>
+					</li>
+					<li class=" pull-left header-hover">
+						<a href="">网站导航</a>
+						<div class="header-hover-hide header-hover-hide-sp">
+							<table width="170" cellspacing="0">
+								<th>购物</th>
+								<tr>
+									<td><a href="">白酒</a></td>
+									<td><a href="">葡萄酒</a></td>
+									<td><a href="">洋酒</a></td>
+								</tr>
+								<tr >
+									<td><a href="">啤酒</a></td>
+									<td><a href="">保健酒</a></td>
+									<td><a href="">黄酒</a></td>
+								</tr>	
+							</table>
+							<table width="170">
+								<th>活动</th>
+								<tr>
+									<td><a href="">进口馆</a></td>
+									<td><a href="">整箱套装</a></td>
+									<td><a href="">清仓</a></td>
+								</tr>
+								<tr >
+									<td><a href="">闪团</a></td>
+									<td><a href="">新品</a></td>
+									<td><a href="">发现</a></td>
+								</tr>	
+							</table>
+							
+						</div>
+					</li>
+					<li class=" pull-left header-hover">
+						<a href="">客户服务</a>
+						<div class="header-hover-hide">
+							<p><a href="">常见问题</a></p>
+							<p><a href="">配送说明</a></p>
+							<p><a href="">售后服务</a></p>
+						</div>
+					</li>
+					<li class=" pull-left">客服热线 <b>400-617-999</b></li>
+				</ul>
+			</div>
+		</div>	
+	</div>	
+	<!-- 最上面结束 -->
+	<div class="clear"></div>
+	<!-- search开始-->
+	<div class="search-wrap">
+		<div class="search ct">
+			<div class="pull-left logo">
+				<a href=""><img src="./img/logo.png" alt=""></a>
+				<a href=""><img src="./img/search1.gif" alt=""></a>
+			</div>
+			<div class="search-input pull-left">
+				<div class="input">
+					<input type="text">
+					<button type="submit">提 交</button>
+				</div>
+				<div class="input-2">
+					<ul>
+						<li><a href="">品质红酒节 </a></li>
+						<li><a href="">结婚季</a></li>
+						<li><a href="">五粮液</a></li>
+						<li><a href="">剑南春</a></li>
+						<li><a href="">汾酒</a></li>
+						<li><a href="">酒鬼酒</a></li>
+						<li><a href="">古井贡</a></li>
+						<li><a href="">拉菲</a></li>
+						<li><a href="" style="color: #c00;">茉莉花</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="pull-right pic">
+				<img src="./img/xuebitu.png" alt="">
+			</div>
+		</div>
+	</div>	
+	<!-- search结束-->
+	<div class="clear"></div>
+	<!-- 导航开始 -->
+	<div class="nav-wrap">
+		<div class="navs ct">
+			<p>
+				全部商品分类
+				<div class="nav-list">
+					<ul>
+						<li>
+							<p>❤一键选酒</p>
+							<p><a href="" class="nav-list-a">整箱购</a> <a href="">婚宴酒</a></p>
+							<p><a href="">名酒专区</a> <a href="" class="nav-list-a">年份老酒</a></p>
+							<div class="nav-second-menu">
+								<div class="nav-second-menu-left">
+									<ul class="nav-second-menu-left-ul-1st">
+										<li>特色会场</li>
+										<li>精选会场</li>
+										<li>特色专区</li>
+										<li>企业用酒</li>
+										<li>红洋酒专区</li>
+										<li>名庄推荐</li>
+									</ul>
+								</div>
+								<div class="nav-second-menu-center">
+									<ul>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+										<li>
+											<a href="">清仓特卖</a>
+											<a href="">值得买</a>
+											<a href="">精品酒铺</a>
+											<a href="">宴请用酒</a>
+										</li>
+									</ul>
+								</div>
+								<div class="nav-second-menu-right">
+									<img src="./img/nav-right.jpg" alt="">
+								</div>
+							</div>
+							
+						</li>
+						<li>
+							<p><a href="">白酒</a></p>
+							<p><a href="">茅台</a> <a href="" class="nav-list-a">五粮液</a> <a href="">剑南春</a></p>
+							<p><a href="">浓香型</a> <a href="" class="nav-list-a">酱香型</a> <a href="">贵州</a></p>
+							<div class="nav-second-menu">
+								这个里面的东西好难写出来。。
+							</div>
+						</li>
+						<li>
+							<p><a href="">葡萄酒</a></p>
+							<p><a href="">法国</a> <a href="" class="">澳大利亚</a> <a href="">西班牙</a></p>
+							<p><a href="">中国</a> <a href="" class="nav-list-a">茉莉花</a> <a href="">丁戈树</a></p>
+							<div class="nav-second-menu">
+								是不是你在想我了，让我这么难受。
+							</div>
+						</li>
+						<li>
+							<p><a href="">洋酒</a></p>
+							<p><a href="" class="nav-list-a">威士忌</a> <a href="" class="">白兰地</a> <a href="" class="nav-list-a">人头马</a></p>
+							<p><a href="">马爹利</a> <a href="" class="">真露</a></p>
+							<div class="nav-second-menu">
+								你说话啊
+							</div>
+						</li>
+						<li>
+							<p><a href="">啤酒/黄酒/养生酒</a></p>
+							<p>
+								<a href="" class="nav-list-a">艾丝伯爵</a> 
+								<a href="" class="nav-list-a">青岛</a> 
+								<a href="" class="nav-list-a">1664</a>
+							</p>
+							<p><a href="">劲牌</a> <a href="" class="">猎鹰</a> <a href="">狮虎争霸</a></p>
+							<div class="nav-second-menu">
+								当初谁先答应我的？
+							</div>
+						</li>
+						<li>
+							<p><a href="">食尚</a></p>							
+							<p><a href="" class="">洽洽食品</a> <a href="" class="nav-list-a">进口食品</a></p>
+							<div class="nav-second-menu">
+								滚啊,我不愿意想起这些东西，滚啊~
+							</div>
+						</li>
+					</ul>
+				</div>
+			</p>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">值得买</a></li>
+				<li><a href="#">闪团</a></li>
+				<li><a href="#">葡萄酒馆</a></li>
+				<li><a href="#">洋酒馆</a></li>
+				<li><a href="#">清仓</a></li>
+				<li><a href="#">超级单品日</a></li>
+				<li><a href="#">新品</a></li>
+				<li><a href="#">手机专享</a></li>
+			</ul>
+			<img src="./img/nav.gif" alt="">
+		</div>
+	</div>	
+	<!-- 导航结束 -->
+	<div class="clear"></div>
+	<!-- 商品详情开始 -->
+	<div class="shop-detail ct">
+		<!-- 最顶层的广告 -->
+		<img src="./img/xiangqing/1-1.jpg" alt="">
+		<!-- 当前位置信息 -->
+		<p><a href="">首页</a>><a href="">白酒</a>> <a href="">孔府家</a> >【孔府家特卖】52°孔府家酒窖藏珍品1500ml</p>
+		
+		<!-- 商品详情 -->
+		<div class="shop-detail-main">
+			<!-- 商品详情左边 -->
+			<div class="shop-detail-main-left">
+				<div class="img-wrap">
+					<img src="./img/xiangqing/0.jpg" alt="" class="shop-img">
+					<div class="img-tool">
+						
+					</div>
+					
+				</div>
+					<div class="morebig">
+						<img src="./img/xiangqing/0.jpg" alt="">
+					</div>
+					<ul>
+						<li><img src="./img/xiangqing/0.jpg" alt=""></li>
+						<li><img src="./img/xiangqing/1.jpg" alt=""></li>
+						<li><img src="./img/xiangqing/2.jpg" alt=""></li>
+						<li><img src="./img/xiangqing/3.jpg" alt=""></li>
+					</ul>
+					<p>商品编号：010064910</p>
+			</div>
+			<!-- 商品详情中间 -->
+			<div class="shop-detail-main-center">
+				<p>【孔府家特卖】52°孔府家酒窖藏珍品1500ml</p>
+				<p>1500ml大容量陶坛 亏本回馈</p>
+				<div class="shop-detail-main-center-main">
+					<p>酒仙价&nbsp&nbsp&nbsp&nbsp&nbsp<span>￥99.00</span></p>
+					<p>促销价&nbsp&nbsp&nbsp&nbsp&nbsp<span>￥79.00</span></p>
+					<p>促销&nbsp&nbsp&nbsp&nbsp&nbsp <b>限购</b> <span>已优惠￥20.00元</span></p>
+					<p><b>满赠</b>&nbsp&nbsp&nbsp&nbsp<img src="./img/xiangqing/4.jpg" alt="" width="20">x1&nbsp&nbsp&nbsp&nbsp<span>孔府家特卖-满299送青玉瓷酒具1套，不循环</span> <a href="">查看更多商品></a></p>
+					<p><b>加价购</b>&nbsp&nbsp&nbsp<img src="./img/xiangqing/5.jpg" alt="" width="20">x1&nbsp&nbsp&nbsp<span>孔府家特卖-加6元得孔府家银奖1988·贰号1瓶</span> <a href="">查看更多商品></a></p>
+				</div>
+				<p>累计销量20973&nbsp&nbsp&nbsp&nbsp&nbsp  酒友评分4.8 &nbsp&nbsp&nbsp&nbsp&nbsp 送金币39</p>
+				<p>配送到 <a href="">（地点）</a>&nbsp&nbsp&nbsp&nbsp&nbsp有货   &nbsp&nbsp&nbsp&nbsp&nbsp预计1-2天到达</p>
+				<p>选择&nbsp&nbsp&nbsp&nbsp&nbsp <a href="javscript:viod(0)"><img src="./img/xiangqing/6.jpg" alt="" width="30"></a>&nbsp&nbsp&nbsp&nbsp&nbsp <a href="javscript:viod(0)"><img src="./img/xiangqing/7.jpg" alt="" width="30"></a></p>
+
+
+				<p class="many">
+					数量&nbsp&nbsp&nbsp&nbsp&nbsp
+					<button>
+						-
+					</button>
+					<input type="text" value="1">
+					<button>
+						+
+					</button>
+				</p>
+
+
+				<p>加入购物车</p>
+			</div>
+
+			<!-- 商品详情右边 -->
+			<div class="shop-detail-main-right">
+				<a href=""><img src="./img/xiangqing/8.jpg" alt="" width="100%" height="100%">孔府家</a>
+				<p><span>酒仙自</span></p>
+
+
+				<p class="shop-detail-main-right-p">售后无忧</p>
+				<p>七天无理由退货</p>
+				<p class="shop-detail-main-right-p">售后补充</p>
+				<p>啤/老酒无理由不退</p>
+				<p class="shop-detail-main-right-p">满百包邮</p>
+				<p>偏远地区满1000包</p>
+				<p class="shop-detail-main-right-p">正品保证</p>
+				<p>厂家直供 品质放心</p>
+
+				<p class="shop-detail-main-right-p-button"><button>在线客服</button></p>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+
+		<!-- 推荐组合 -->
+		<div class="zuhe">
+			<h2><p>推荐组合</p></h2>
+			<div class="zuhe-left">
+				<a href=""><img src="./img/xiangqing/17.jpg" alt="" width="150" height="100"></a>
+				<p><a href="">【孔府家特卖】52°孔府家酒窖</a></p>
+			</div>
+			<p>+</p>
+			<div class="ul-wrap">
+				<ul>
+				<li>
+					<a href=""><img src="./img/xiangqing/9.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/10.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/11.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li><li>
+					<a href=""><img src="./img/xiangqing/12.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li><li>
+					<a href=""><img src="./img/xiangqing/13.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li><li>
+					<a href=""><img src="./img/xiangqing/14.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/15.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/16.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<input type="checkbox"><span>￥180.00</span>
+				</li>
+			</ul>
+			</div>
+			<div class="zuhe-taozhuang">
+				<p>已选择<span>0</span>个商品</p>
+				<p>搭配价<span>￥396.00元</span></p>
+				<p><button>购买套装</button></p>
+			</div>
+		</div>
+
+		<div class="zuhe">
+			<h2><p>猜你喜欢</p></h2>
+		
+			<div class="ul-wrap-2">
+				<ul>
+				<li>
+					<a href=""><img src="./img/xiangqing/22.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/21.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/20.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/19.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/18.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+				<li>
+					<a href=""><img src="./img/xiangqing/17.jpg" alt=""></a>
+					<p><a href="">孔府家特卖 52°孔府家酒窖藏</a></p>
+					<span>￥180.00</span>
+				</li>
+			</ul>
+			</div>
+			
+		</div>
+
+
+	
+	</div>
+	<!-- 商品详情结束 -->
+	<!-- 底层开始 -->
+	<div id="footer">
+		<div class="footer-center ct">
+			<div class="footer-center-top">
+				<div class="footer-center-top-phone">400-617-9999</div>
+				<div class="footer-center-top-phone-right">客服热线9:00-23:00贴心服务</div>
+				<div class="footer-center-top-input">
+					优惠促销早知道  <input type="text" placeholder="请输入您的邮箱地址">
+				</div>
+			</div>
+			<div class="clear"></div>
+			<hr>
+			<div class="footer-center-nav">
+				<ul>
+					<li>新手入门</li>
+					<li>购物保障</li>
+					<li>服务协议</li>
+					<li>发票说明</li>
+				</ul>
+				<ul>
+					<li>常见问题</li>
+					<li>红包使用</li>
+					<li>返现使用</li>
+					<li>兑换码</li>
+				</ul>
+				<ul>
+					<li>配送说明</li>
+					<li>配送时间</li>
+					<li>配送费用</li>
+					<li>配送范围</li>
+				</ul>
+				<ul>
+					<li>支付方式</li>
+					<li>货到付款</li>
+					<li>在线支付</li>
+					<li>线下支付</li>
+				</ul>
+				<ul>
+					<li>售后服务</li>
+					<li>品质保证</li>
+					<li>退换货政策</li>
+					<li>退换货流程</li>
+				</ul>
+				<ul>
+					<li>特色服务</li>
+					<li>会员俱乐部</li>
+					<li>企业客户</li>
+					<li>酒仙社区</li>
+				</ul>
+				<div class="footer-center-nav-photo">
+					<img src="./img/footer.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-last ct">
+		<div class="footer-last-left">
+			<div class="footer-last-top">
+				<ul>
+					<li><a href="">公司简介</a></li>
+					<li><a href="">管理团队</a></li>
+					<li><a href="">媒体报道</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">招贤纳士</a></li>
+					<li><a href="">友情链接</a></li>
+					<li><a href="">网站地图</a></li>
+					<li><a href="">品牌大全</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<p>酒仙网电子商务股份有限公司  ©  酒仙网   2011  jiuxian.com  All   Rights Reserved   <a href="">京ICP备11007961号-1</a>  京公网安备1101050188221</p>
+			<div class="footer-last-top">
+				<ul>
+					<li><a href="">大麦网</a></li>
+					<li><a href="">1折网</a></li>
+					<li><a href="">铁血军事</a></li>
+					<li><a href="">酒仙网白酒</a></li>
+					<li><a href="">酒仙网葡萄酒</a></li>
+					<li><a href="">开放平台招商</a></li>
+					<li><a href="">购酒论坛</a></li>
+					<li><a href="">名鞋库</a></li>
+					<li><a href="">酒仙网团购</a></li>
+					<li><a href="">更多</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<p>统一社会信用代码  91110302554833311D   食品流通许可证编号  SP1103021310005747</p>
+			<p>地址：北京市北京经济技术开发区经海五路58号院8号楼1至6层</p>
+			<img src="./img/footer-last.png" alt="">
+			<p class="last-p">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+		</div>
+		<img src="./img/last-img.png" alt="">
+	</div>
+	<!-- 底层结束 -->
+	<div id="tool">
+		<ul>
+			<li>
+				我
+				<div class="tool-hide">
+					如果你不回来
+				</div>
+			</li>
+			<li>
+				收
+				藏
+				<div class="tool-hide">
+					你会回来的吧？
+				</div>
+			</li>
+			<li>
+				购
+				物
+				车
+				<div class="tool-hide tool-hide-3">
+					
+				</div>
+			</li>
+			<li>
+				在
+				线
+				客
+				服
+				<div class="tool-hide">
+					回来吧
+
+				</div>
+			</li>
+		</ul>
+		<div class="tool-footer">
+			<div class="username">
+				用户
+				<div class="username-hide">
+					pls u
+				</div>
+			</div>
+			<div class="username">
+				二
+				维
+				码
+				<div class="username-hide">
+					back!
+				</div>
+			</div>
+			<div class="username toTop">
+				返回顶部
+				<div class="username-hide username-hide-3">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="left">
+		<ul>
+			<li>1F</li>
+			<li>2F</li>
+			<li>3F</li>
+			<li>4F</li>
+			<li>5F</li>
+			<li>↑</li>
+		</ul>
+	</div>
+</body>
+</html>

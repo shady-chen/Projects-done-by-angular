@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="./css/login.css">
+	<script src="./js/jQuery.js"></script>
+	<script src="./js/login.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<!-- logo -->
+			<img src="./img/logo.png" alt="">
+			<img src="./img/logo-left.jpg" alt="">
+			<div class="top-right">
+				<span>欢迎来到酒仙网！</span>
+				<span><a href="">免费注册</a></span>
+				<span>帮助中心</span>
+			</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="main">
+			<div class="login">
+				<p><a href="">账号登录</a>丨<a href="">手机动态密码登录</a></p>
+				<form action="index.html" method="get" id="myform">
+					<input type="text" placeholder="用户名/邮箱/手机号" name="username" class="test-input">
+					<span class="username-test">格式错误,用户名为3-20位</span>
+					<input type="password" placeholder="密码" name="psw" class="test-input">
+					<span class="password-test">格式错误,密码为6-20位</span>
+					<input type="text" name="num" placeholder="验证码" class="test-input">
+					<input type="text" name="num-re" disabled="">
+					<span class="num-test">格式错误,验证码就四个数字</span>
+					<input type="submit" value="提交" id="mysubmit">
+				</form>
+				<p id="forget">
+					<input type="checkbox"><span>记住密码</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="">忘记密码</a>&nbsp&nbsp&nbsp<a href="">免费注册</a>
+				</p>
+
+			</div>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-main">
+			<p>©  酒仙网  2011 jiuxian.com All  Rights Reserved  京ICP证110141号  京公网安备1101050188221</p>
+			<p>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+		</div>		
+	</div>
+	<div class="mask">
+		<span id="second">5</span>s后自动跳转
+	</div>
+</body>
+</html>

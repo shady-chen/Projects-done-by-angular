@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>register</title>
+	<link rel="stylesheet" href="./css/register.css">
+	<script src="./js/ajax3.0-min.js"></script>
+	<script src="./js/jQuery.js"></script>
+
+	<script src="./js/register.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="top">
+			<!-- logo -->
+			<img src="./img/logo.png" alt="">
+			<img src="./img/logo-left.jpg" alt="">
+			<div class="top-right">
+				<span>欢迎来到酒仙网！</span>
+				<span><a href="">免费注册</a></span>
+				<span>帮助中心</span>
+			</div>
+
+		</div>
+	</div>
+	<div class="content">
+		<div class="main">
+		 	<div class="register">
+		 		<form action="index.html" method="get">
+		 		   <!-- 第一个输入框 -->
+			 		<div class="phone">
+			 			<div class="phone-num">手机号</div>
+			 			<div class="phone-input">
+			 				<input type="text" name="userphone">
+			 				<span class="forzmt">该手机号码已被注册</span>
+			 			</div>
+			 		</div>
+			 		<!-- 第二个输入框 -->
+			 		<div class="yanzhengma">
+			 			<div class="yangzhengma-num">验证码</div>
+			 			<div class="yangzhengma-input-1">
+			 				<input type="text" name="yzm-shuru">
+			 			</div>
+			 			<div class="yangzhengma-input-2">
+			 				<input type="text" name="yzm-shuchu" disabled>
+			 			</div>
+			 		</div>
+			 		<!-- 第三个输入框 -->
+			 		<div class="yanzhengma">
+			 			<div class="yangzhengma-num">验证码</div>
+			 			<div class="yangzhengma-input-1">
+			 				<input type="text" name="yzm-shuru">
+			 			</div>
+			 			<div class="yangzhengma-input-2 yangzhengma-input-2-2">
+			 				<input type="button" name="jym"  value="获取校验码" class="huoqu">
+			 			</div>
+			 		</div>
+		 			<!-- 第四个输入框 -->
+		 			<div class="phone">
+			 			<div class="phone-num">设置密码</div>
+			 			<div class="phone-input">
+			 				<input type="text" name="userphone">
+			 			</div>
+			 		</div>
+			 		<!-- 第五个输入框 -->
+			 		<div class="phone">
+			 			<div class="phone-num">确认密码</div>
+			 			<div class="phone-input">
+			 				<input type="text" name="userphone">
+			 			</div>
+			 		</div>
+			 		<!-- 阅读协议 -->
+			 		<div class="checkbox">
+			 			<input type="checkbox"><span>我已阅读并同意<a href="">《酒仙网用户注册协议》</a></span>
+			 		</div>
+			 		<!-- 提交 -->
+			 		<div class="submit" >
+			 			<input type="submit" value="立 即 注 册">
+			 		</div>
+		 		</form>
+		 	</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-main">
+			<p>©  酒仙网  2011 jiuxian.com All  Rights Reserved  京ICP证110141号  京公网安备1101050188221</p>
+			<p>购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+		</div>		
+	</div>
+	<div class="mask">
+		<p>恭喜注册成功</p>
+		<span id="second">5</span>s后自动跳转
+	</div>
+</body>
+</html>
